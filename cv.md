@@ -3,9 +3,9 @@
 **Ilya Gutorov**
 ## *Contacts for communication*
 ***
-**e-mail:** gutorov.iliya@gmail.com
-**github:** https://github.com/gutori
-**linkedin:** https://www.linkedin.com/in/ilya-gutorov-19b604217/
+**E-mail:** gutorov.iliya@gmail.com  
+**Github:** https://github.com/gutori  
+**Linkedin:** https://www.linkedin.com/in/ilya-gutorov-19b604217/  
 ## *About Me*
 ***
 I have a dream to enter IT. I am a purposeful person and I do my best to make my dream come true. I study English and programming.
@@ -37,7 +37,10 @@ getSalary()
 ```
 ## *Education*
 ***
-**Sukhoi State Technical University of Gomel** *2008-2014*
-**Open IT Gomel (offline)** *2021*
-**Open IT Grodno (online)** *2021*
-**Intro to IT** *2021*
+**Sukhoi State Technical University of Gomel** *2008-2014*  
+**Open IT Gomel (offline)** *2021*  
+**Open IT Grodno (online)** *2021*  
+**Intro to IT** *2021*  
+## *Level of English*
+***
+**A1.** Every day I study English and my level is growing.
