@@ -1,1 +1,0 @@
-https://gutori.github.io/rsschool-cv/cv
