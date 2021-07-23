@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+	<div class="container">
+
+		<header class="header">
+			<h1 class="header__title">Ilya Gutorov</h1>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li>
+						<a class="menu__link" href="#contacts">Contacts for communication</a>
+					</li>
+					<li>
+						<a class="menu__link" href="#about">About Me</a>
+					</li>
+					<li>
+						<a class="menu__link" href="#skills">Skills</a>
+					</li>
+					<li>
+						<a class="menu__link" href="#code">Code examples</a>
+					</li>
+					<li>
+						<a class="menu__link" href="#education">Education</a>
+					</li>
+					<li>
+						<a class="menu__link" href="#english">Level of English</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main">
+			<div class="contacts__section">
+				<figure>
+					<img class="contacts__photo" src="gutorov.jpg" alt="Photo of Gutorov Ilya">
+				</figure>
+				<div class="contacts__container">
+					<h2 class="contacts__title" id="contacts">Contacts for communication</h2>
+					<ul class="contacts__list">
+						<li>
+							<strong>E-mail:</strong> gutorov.iliya@gmail.com
+						</li>
+						<li>
+							<strong>Github:</strong>
+							<a class="contacts__link" href="https://github.com/gutori">GutoRi</a>
+						</li>
+						<li>
+							<strong>Linkedin:</strong>
+							<a class="contacts__link" href="https://www.linkedin.com/in/ilya-gutorov-19b604217/">Ilya
+								Gutorov</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="about__container">
+				<h2 class="about__title" id="about">About Me</h2>
+				<p class="about__text">I have a dream to enter IT. I am a purposeful person and I do my best to
+					make my dream come true. I study English and programming.</p>
+			</div>
+
+			<div class="skills__container">
+				<h2 class="skills__title" id="skills">Skills</h2>
+				<ul class="skills__list">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS Basic</li>
+					<li>Git</li>
+				</ul>
+			</div>
+
+			<div class="code__container">
+				<h2 class="code__title" id="code">Code examples</h2>
+				<pre class="code__text">
+					<code >
+						function getSalary() {
+							let hours = prompt("Please enter the number of hours you worked this week", 40);
+							let rate = prompt("Please enter your rate");
+							let basicPayment = rate * hours;
+							let overtimePayment;
+							
+							if (hours > 40) {
+								basicPayment = rate * 40;
+								overtimePayment = rate * 1.5 * (hours - 40);
+								let payment = basicPayment + overtimePayment;
+								alert("You worked overtime this week! Your total payment is " + payment);
+							} else {
+								alert("Your total payment is " + basicPayment);
+							}
+						}
+						getSalary()
+					</code>
+				</pre>
+			</div>
+
+			<div class="education__container">
+				<h2 class="education__title" id="education">Education</h2>
+				<p class="education__text"><strong>Sukhoi State Technical University of Gomel</strong> <em>2008-2014</em>
+				</p>
+				<p class="education__text"><strong>Open IT Gomel (offline)</strong> <em>2021</em></p>
+				<p class="education__text"><strong>Open IT Grodno (online)</strong> <em>2021</em></p>
+				<p class="education__text"><strong>Intro to IT 2021</strong> <em>2021</em></p>
+			</div>
+
+			<div class="english__container">
+				<h2 class="english__title" id="english">Level of English</h2>
+				<p class="english__text"><strong>A1.</strong> Every day I study English and my level is growing.</p>
+			</div>
+		</main>
+
+		<hr>
+
+		<footer class="footer">
+			<ul class="footer__list">
+				<li>
+					<a class="footer__link-git" href="https://github.com/GutoRi">
+						<img class="footer__image-git" src="github_logo.png" alt="Logo github">
+					</a>
+				</li>
+				<li>
+					<time class="footer__year">2021</time>
+				</li>
+				<li>
+					<a class="footer__link-course" href="https://rs.school/js/">
+						<img class="footer__image-course" src="https://rs.school/images/rs_school_js.svg" alt="Logo course">
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+	</div>
+</body>
+
+</html>
