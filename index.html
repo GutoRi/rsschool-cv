@@ -6,11 +6,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/tomorrow-night-bright.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a class="header__logo data" data-goto=".section__photo" href="#">
+            <div>Photo</div>
+          </a>
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li><a class="menu__link data" data-goto=".section__contacts" href="#">Contacts for communication</a>
+                </li>
+                <li><a class="menu__link data" data-goto=".section__about" href="#">About Me</a></li>
+                <li><a class="menu__link data" data-goto=".section__skills" href="#">Skills</a></li>
+                <li><a class="menu__link data" data-goto=".section__code" href="#">Code examples</a></li>
+                <li><a class="menu__link data" data-goto=".section__project" href="#">Project</a></li>
+                <li><a class="menu__link data" data-goto=".section__education" href="#">Education</a></li>
+                <li><a class="menu__link data" data-goto=".section__english" href="#">Level of English</a></li>
+              </ul>
+            </nav>
+          </div>
+          <a class="header__logo" href="#footer">
+            <div>Footer</div>
+          </a>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__section section__photo">
+          <img src="gutorov.jpg" alt="Photo of Gutorov Ilya">
+          <h1>Ilya Gutorov</h1>
+        </section>
+        <section class="page__section section__contacts">
+          <h2>Contacts for communication</h2>
+          <ul class="contacts__list">
+            <li>
+              <strong>E-mail:</strong>
+              <a class="email__link" href="mailto:gutorov.iliya@gmail.com">gutorov.iliya@gmail.com</a>
+            </li>
+            <li>
+              <strong>Github:</strong>
+              <a class="contacts__link" href="https://github.com/gutori">GutoRi</a>
+            </li>
+            <li>
+              <strong>Linkedin:</strong>
+              <a class="contacts__link" href="https://www.linkedin.com/in/ilya-gutorov-19b604217/">Ilya
+                Gutorov</a>
+            </li>
+          </ul>
+        </section>
+        <section class="page__section section__about">
+          <h2>About Me</h2>
+          <p class="about__text">I have a dream to enter IT. I am a purposeful person and <br> I do my best to
+            make my dream come true. I study English<br> and programming.</p>
+        </section>
+        <section class="page__section section__skills">
+          <h2>Skills</h2>
+          <ul class="skills__list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS Basic</li>
+            <li>Git</li>
+          </ul>
+        </section>
+        <section class="page__section section__code">
+          <h3>Code examples</h3>
+          <pre class="code__text">
+            <code>
+              function getSalary() {
+              let hours = prompt("Please enter the number of
+              hours you worked this week", 40);
+              let rate = prompt("Please enter your rate");
+              let basicPayment = rate * hours;
+              let overtimePayment;
 
+              if (hours > 40) {
+              basicPayment = rate * 40;
+              overtimePayment = rate * 1.5 * (hours - 40);
+              let payment = basicPayment + overtimePayment;
+              alert("You worked overtime this week! Your total
+              payment is " + payment);
+              } else {
+              alert("Your total payment is " + basicPayment);
+              }
+              }
+              getSalary();
+            </code>
+          </pre>
+        </section>
+        <section class="page__section section__project">
+          <h4>Project</h4>
+          <a class="project__link" href="https://rolling-scopes-school.github.io/gutori-JSFEPRESCHOOL/museum/"
+            target="_blank">
+            <p class="projects__name">Museum</p>
+            <img class="project__image" src="museum_project.jpg" alt="project museum">
+            <p class="project__description">landing page Louvre (HTML, CSS, JS)</p>
+          </a>
+        </section>
+        <section class="page__section section__education">
+          <h5>Education</h5>
+          <div class="education__container">
+            <p class="education__text"><strong>Sukhoi State Technical University of Gomel</strong>
+              <em>2008-2014</em>
+            </p>
+            <p class="education__text"><strong>Open IT Gomel (offline)</strong> <em>2021</em></p>
+            <p class="education__text"><strong>Open IT Grodno (online)</strong> <em>2021</em></p>
+            <p class="education__text"><strong>Intro to IT 2021</strong> <em>2021</em></p>
+            <p class="education__text"><strong>JS/FE Pre-School</strong> (<a
+                href="https://app.rs.school/certificate/bzq6fpos">Certificate</a>) <em>2021</em></p>
+          </div>
+        </section>
+        <section class="page__section section__english">
+          <h6>Level of English</h6>
+          <p class="english__text"><strong>A1.</strong>Every day I study English and my level is growing.</p>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer__container">
+          <ul class="footer__list">
+            <li>
+              <a class="footer__link-git" href="https://github.com/GutoRi" target="_blank">
+                <img class="footer__image-git" src="github_logo.png" alt="Logo github">
+              </a>
+            </li>
+            <li>
+              <time class="footer__year">2021</time>
+            </li>
+            <li>
+              <a class="footer__link-course" href="https://rs.school/js/" target="_blank">
+                <img class="footer__image-course" src="https://rs.school/images/rs_school_js.svg" alt="Logo course">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
   </body>
 
 </html>
